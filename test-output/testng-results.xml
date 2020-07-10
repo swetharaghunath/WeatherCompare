@@ -2,19 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2317" started-at="2020-06-29T02:14:50 IST" finished-at="2020-06-29T02:14:52 IST">
+  <suite name="Default suite" duration-ms="20017" started-at="2020-07-11T02:51:04 IST" finished-at="2020-07-11T02:51:24 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2317" started-at="2020-06-29T02:14:50 IST" finished-at="2020-06-29T02:14:52 IST">
+    <test name="Default test" duration-ms="20017" started-at="2020-07-11T02:51:04 IST" finished-at="2020-07-11T02:51:24 IST">
       <class name="com.weather.testcases.WeatherUI">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.weather.testcases.WeatherUI@6385cb26]" name="setUp" is-config="true" duration-ms="13304" started-at="2020-06-29T02:14:37 IST" finished-at="2020-06-29T02:14:50 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.weather.testcases.WeatherUI@157632c9]" name="setUp" is-config="true" duration-ms="6501" started-at="2020-07-11T02:50:58 IST" finished-at="2020-07-11T02:51:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gotoWeather()[pri:0, instance:com.weather.testcases.WeatherUI@6385cb26]" name="gotoWeather" duration-ms="2209" started-at="2020-06-29T02:14:50 IST" finished-at="2020-06-29T02:14:52 IST">
+        <test-method status="PASS" signature="gotoWeather()[pri:0, instance:com.weather.testcases.WeatherUI@157632c9]" name="gotoWeather" duration-ms="19960" started-at="2020-07-11T02:51:04 IST" finished-at="2020-07-11T02:51:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoWeather -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.weather.testcases.WeatherUI@157632c9]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-07-11T02:51:24 IST" finished-at="2020-07-11T02:51:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.weather.testcases.WeatherUI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

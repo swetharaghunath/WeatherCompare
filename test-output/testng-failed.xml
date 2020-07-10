@@ -5,6 +5,7 @@
     <classes>
       <class name="com.weather.testcases.WeatherUI">
         <methods>
+          <include name="tearDown"/>
           <include name="setUp"/>
           <include name="gotoWeather"/>
         </methods>
