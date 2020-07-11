@@ -1,5 +1,7 @@
 package com.weather.testcases;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,11 +27,8 @@ public class WeatherUI extends BaseTest{
 	WebElement cityPopupText;
 	@FindBy (className = "notnow")
 	WebElement notNow;
-	String condition ;
-	String wind;
-	String Humidity;
-	String TempINdegress;
-	String TempInFaranheit;
+	ArrayList<String> weatherDetails = new ArrayList<String>();
+	
 	public void gotoUrl(String url) {
 		driver.get(config.getProperty(url));
 		log.debug("specified url "+url+"opened");
@@ -53,9 +52,6 @@ public class WeatherUI extends BaseTest{
 	@Test
 	public void gotoWeather() throws InterruptedException {
 		gotoUrl("testsiteurl");
-		//weather ="Bengaluru";
-		//checkForPopups();
-		//gotoCity();
 		/*
 		 * if(driver.findElement(By.className("notnow")).is()) {
 		 * driver.findElement(By.className("notnow")).click(); }
@@ -69,14 +65,24 @@ public class WeatherUI extends BaseTest{
 			driver.findElement(By.id("Bengaluru")).click();
 			driver.findElement(By.id("Bengaluru")).click();
 		};
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[contains(text(),'Bengaluru')]")).click();;
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		if(driver.findElement(By.xpath("//span[contains(text(),'Bengaluru, Karnataka')]"))!=null) {
 			
-			 
-			 
+			ArrayList<String> weatherDetails = new ArrayList<String>();
+			weatherDetails.add(0, driver.findElement(By.xpath("//b[contains(text(),'Condition')]")).getText().trim());
 
+			weatherDetails.add(1, driver.findElement(By.xpath("//b[contains(text(),'Wind')]")).getText());
+			
+			weatherDetails.add(2, driver.findElement(By.xpath("//b[contains(text(),'Humidity')]")).getText());
+ 
+			weatherDetails.add(3, driver.findElement(By.xpath("//b[contains(text(),'Temp in Degrees')]")).getText());
+ 
+			weatherDetails.add(4, driver.findElement(By.xpath("//b[contains(text(),'Temp in Fahrenheit')]")).getText());
+
+			for (int i = 0; i < weatherDetails.size(); i++) 
+	            System.out.print(weatherDetails.get(i) + "\n");
 
 		}
 
