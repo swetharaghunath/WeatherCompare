@@ -37,12 +37,6 @@ public class WeatherApiResponse {
 
 	@Test
 	public void testResponseBody() {
-		/*
-		 * Map<String, Object> body = get(api).getBody().jsonPath().get();
-		 * System.out.println(body); for (String name : body.keySet())
-		 * System.out.println("key: " + name); for (Object url : body.values())
-		 * System.out.println("value: " + url);
-		 */
 		Map<String, Object> body = get(api).getBody().jsonPath().get();
 		for (Map.Entry<String,Object> entry : body.entrySet())  
 			System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue()
