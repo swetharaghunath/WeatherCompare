@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17377" started-at="2020-07-12T02:19:19 IST" finished-at="2020-07-12T02:19:37 IST">
+  <suite name="Default suite" duration-ms="2459" started-at="2020-07-13T02:59:53 IST" finished-at="2020-07-13T02:59:56 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17377" started-at="2020-07-12T02:19:19 IST" finished-at="2020-07-12T02:19:37 IST">
-      <class name="com.weather.testcases.WeatherUI">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.weather.testcases.WeatherUI@157632c9]" name="setUp" is-config="true" duration-ms="6741" started-at="2020-07-12T02:19:13 IST" finished-at="2020-07-12T02:19:19 IST">
+    <test name="Default test" duration-ms="2459" started-at="2020-07-13T02:59:53 IST" finished-at="2020-07-13T02:59:56 IST">
+      <class name="com.weather.core.WeatherApiResponse">
+        <test-method status="PASS" signature="testResponseBody()[pri:0, instance:com.weather.core.WeatherApiResponse@76329302]" name="testResponseBody" duration-ms="2182" started-at="2020-07-13T02:59:53 IST" finished-at="2020-07-13T02:59:55 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gotoWeather()[pri:0, instance:com.weather.testcases.WeatherUI@157632c9]" name="gotoWeather" duration-ms="17330" started-at="2020-07-12T02:19:19 IST" finished-at="2020-07-12T02:19:37 IST">
+        </test-method> <!-- testResponseBody -->
+        <test-method status="PASS" signature="testResponseCode()[pri:0, instance:com.weather.core.WeatherApiResponse@76329302]" name="testResponseCode" duration-ms="118" started-at="2020-07-13T02:59:55 IST" finished-at="2020-07-13T02:59:56 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gotoWeather -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.weather.testcases.WeatherUI@157632c9]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-07-12T02:19:37 IST" finished-at="2020-07-12T02:19:37 IST">
+        </test-method> <!-- testResponseCode -->
+        <test-method status="PASS" signature="testbody()[pri:0, instance:com.weather.core.WeatherApiResponse@76329302]" name="testbody" duration-ms="117" started-at="2020-07-13T02:59:56 IST" finished-at="2020-07-13T02:59:56 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.weather.testcases.WeatherUI -->
+        </test-method> <!-- testbody -->
+      </class> <!-- com.weather.core.WeatherApiResponse -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

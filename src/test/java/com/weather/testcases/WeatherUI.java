@@ -28,6 +28,7 @@ public class WeatherUI extends BaseTest{
 	@FindBy (className = "notnow")
 	WebElement notNow;
 	ArrayList<String> weatherDetails = new ArrayList<String>();
+
 	
 	public void gotoUrl(String url) {
 		driver.get(config.getProperty(url));
